@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index">Nick's Website</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">Span</span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="work">Work</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="hobbies">Hobbies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="travel">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <body>
+      <button id="places">Click Me!</button>
+      <h1 id="list"></h1>
+      <script>
+        let body = document.querySelector('body');
+            document.querySelector('#places').addEventListener('click', function()
+            {
+              document.getElementById('list').innerHTML = 'Patagonia, Italy, Greece and many places in the USA';
+            });
+      </script>
+    </body>
+</html>

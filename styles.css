@@ -1,0 +1,34 @@
+body {
+    background-color: azure;"
+}
+
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;"
+}
+
+.cardpos {
+    float: left;
+}
+
+.list {
+    float: left;
+    width: 25%;
+    margin: 5%;
+}
+
+#overview {
+    text-align: right;
+    background-color: orange;
+    font-size: large;
+    margin: 2%;
+}
+
+#places {
+    background-color: blue;
+    width: 20%;
+    height: 65px;
+    margin: 5%;
+}
